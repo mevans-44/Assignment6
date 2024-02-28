@@ -2,9 +2,10 @@
 FROM ubuntu:latest
 
 #install packages
-RUN apt-get update && apt-get install -y \
-    package1 \
-    package2
+RUN apt-get update && \
+    apt-get install -y \
+    curl \
+    wget
 
 #environment variables
 ENV APP_HOME /app
