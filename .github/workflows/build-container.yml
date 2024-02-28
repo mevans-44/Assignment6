@@ -20,6 +20,6 @@ jobs:
 
       - name: Build and push container
         run: |
-          docker build -t my-container .
+          docker build -t my-container -f ./Dockerfile .
           docker tag my-container mevans-44/assignment6_image:tag1
           docker push mevans-44/assignment6_image:tag1
